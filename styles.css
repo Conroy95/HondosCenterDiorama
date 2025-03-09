@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Zorgt ervoor dat de footer onderaan komt, zelfs bij weinig inhoud */
 }
 
 header {
@@ -16,9 +18,8 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan komt */
 }
 
 h1 {
