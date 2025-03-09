@@ -1,31 +1,14 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-function addToCart(product, price) {
-    cart.push({ product, price });
-    localStorage.setItem('cart', JSON.stringify(cart));
-    alert(product + " toegevoegd aan winkelwagen!");
+// Eenvoudige zoekfunctie voor producten (kan worden uitgebreid)
+function searchProducts() {
+    let input = document.getElementById('search').value.toLowerCase();
+    let cards = document.getElementsByClassName('product-card');
+    
+    for (let i = 0; i < cards.length; i++) {
+        let productName = cards[i].getElementsByTagName('h2')[0].textContent.toLowerCase();
+        if (productName.includes(input)) {
+            cards[i].style.display = '';
+        } else {
+            cards[i].style.display = 'none';
+        }
+    }
 }
-
-function loadCart() {
-    let cartItems = document.getElementById('cart-items');
-    let totalPrice = document.getElementById('total-price');
-    let total = 0;
-
-    cartItems.innerHTML = "";
-    cart.forEach(item => {
-        let li = document.createElement('li');
-        li.textContent = `${item.product} - €${item.price.toFixed(2)}`;
-        cartItems.appendChild(li);
-        total += item.price;
-    });
-
-    totalPrice.textContent = `Totaal: €${total.toFixed(2)}`;
-}
-
-function clearCart() {
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart));
-    loadCart();
-}
-
-document.addEventListener('DOMContentLoaded', loadCart);
