@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diorama Webshop</title>
+    <title>Diorama Winkel - Inventaris</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welkom bij de Diorama Webshop</h1>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 1">
+    <header>
+        <h1>Welkom in de Diorama Winkel!</h1>
+        <p>Ontdek de producten in onze miniatuurwinkel.</p>
+    </header>
+
+    <div id="product-list">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Miniatuur Cola Automaat">
             <h2>Miniatuur Cola Automaat</h2>
-            <p>Prijs: €5,00</p>
-            <button onclick="addToCart('Miniatuur Cola Automaat', 5)">Toevoegen aan winkelwagen</button>
+            <p>Een gedetailleerde miniatuur cola-automaat voor je winkel.</p>
+            <a href="product1.html">Bekijk details</a>
         </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product 2">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Miniatuur Kassa">
             <h2>Miniatuur Kassa</h2>
-            <p>Prijs: €7,50</p>
-            <button onclick="addToCart('Miniatuur Kassa', 7.50)">Toevoegen aan winkelwagen</button>
+            <p>Een miniatuur kassa die perfect in je winkel past.</p>
+            <a href="product2.html">Bekijk details</a>
         </div>
+        <!-- Voeg hier meer producten toe -->
     </div>
-    <a href="cart.html">Ga naar winkelwagen</a>
+
+    <footer>
+        <p>&copy; 2025 Diorama Winkel. Alle rechten voorbehouden.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
