@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diorama Hondos Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Chanel Logo" class="logo">
+    </header>
+    
+    <main>
+        <h1>Welkom bij de Diorama Hondos Center</h1>
+        <div class="product-container">
+            <div class="product">
+                <a href="producten/deo.html">
+                    <img src="images/banners/deo.jpg" alt="Deo">
+                    <h2>Deo</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/parfum.html">
+                    <img src="images/banners/parfums.jpg" alt="Parfum">
+                    <h2>Parfum</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/hair.html">
+                    <img src="images/banners/hair.jpg" alt="Hair">
+                    <h2>Hair</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/shampoo.html">
+                    <img src="images/banners/shampoo.jpg" alt="Shampoo">
+                    <h2>Shampoo</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/soap.html">
+                    <img src="images/banners/soap.jpg" alt="Soap">
+                    <h2>Soap</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/make-up.html">
+                    <img src="images/banners/make-up.jpg" alt="Make-up">
+                    <h2>Make-up</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/nail-polish.html">
+                    <img src="images/banners/nail-polish.jpg" alt="Nail-polish">
+                    <h2>Nail-polish</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/toothpaste.html">
+                    <img src="images/banners/toothpaste.jpg" alt="Toothpaste">
+                    <h2>Toothpaste</h2>
+                </a>
+            </div>
+            <div class="product">
+                <a href="producten/tools.html">
+                    <img src="images/banners/tools.jpg" alt="Tools">
+                    <h2>tools</h2>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024-<span id="currentYear"></span> Hondos Center - Silly's Creations </br>Diorama Model</p>	
+		<script>
+			let date = new Date().getFullYear();
+			document.getElementById("currentYear").textContent = date;
+		  </script>
+    </footer>
+</body>
